@@ -22,14 +22,14 @@ class LoginActivity : AppCompatActivity() {
         }
 
         val etEmail: EditText = findViewById(R.id.etEmail)
-        val etPassword: EditText = findViewById(R.id.etEmail)
+        val etPassword: EditText = findViewById(R.id.etPassword)
         val btLogin: Button = findViewById(R.id.btLogin)
 
         btLogin.setOnClickListener {
             val email: String = etEmail.text.toString()
             val pwd: String = etPassword.text.toString()
 
-            if(email == "invitado@qa" && pwd=="invitado123")
+            if(email == "invitado@dpa.com" && pwd=="invitado123")
             {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
